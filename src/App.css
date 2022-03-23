@@ -43,3 +43,17 @@
   font-size: 16px;
   border-radius: 35px;
 }
+
+h1.heading {
+  margin-top: 50px;
+  margin-bottom: 65px;
+}
+
+p.date{
+  font-weight: 420;
+}
+
+.card-img-top {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
