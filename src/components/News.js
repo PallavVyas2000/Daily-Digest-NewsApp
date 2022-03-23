@@ -14,13 +14,24 @@ export class News extends Component {
       country : PropTypes.string,
       category : PropTypes.string
   }
+  
+  capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       articles: [],
       loading: false,
       page: 1,
+    }
+    if(this.props.category === "general")
+    {
+      document.title = "Top Headlines - Daily Digest";
+    }
+    else{
+      document.title = `${this.capitalizeFirstLetter(this.props.category)} News - Daily Digest`;
     }
   }
 
