@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "E:/Ethical Hacking - Programming/Web Development/React Course/newsapp/src/components/logo192.png";
 import { Link } from "react-router-dom";
 
+
 export class Navbar extends Component {
   render() {
     return (
