@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import NewsItem from './NewsItem'
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-const News = (props) => {
+export default function News(props){
   const [articles, setarticles] = useState([])
   const [page, setpage] = useState(1)
   const [totalResults, settotalResults] = useState(0)
@@ -45,7 +45,7 @@ const News = (props) => {
   }
   return (
     <>
-      <h1 className="heading text-center" style={{marginTop: "120px"}}>Daily Digest - Top Headlines</h1>
+      <h1 className={`h1 text-center text-${props.mode === 'dark'? 'white':'dark'} `} style={{marginTop: "120px", marginBottom: "50px"}}>Daily Digest - Top Headlines</h1>
       <InfiniteScroll
         dataLength={articles.length}
         next={fetchMoreData}
@@ -56,7 +56,7 @@ const News = (props) => {
           <div className="row">
             {articles.map((element) => {
               return <div className="col-md-4 my-3" key={element.url}>
-                <NewsItem title={element.title ? element.title.slice(0, 70) : ""} source={element.source.name} author={element.author ? element.author : "Unknown"} publishedAt={element.publishedAt} description={element.description ? element.description.slice(0, 100) : ""} newsUrl={element.url} imgUrl={element.urlToImage ? element.urlToImage : "https://exchange4media.gumlet.io/news-photo/1522981614_f9REAd_online_content.jpg?format=webp&w=750&dpr=1.0"} />
+                <NewsItem mode = {props.mode} toggleMode = {props.toggleMode} title={element.title ? element.title.slice(0, 70) : ""} source={element.source.name} author={element.author ? element.author : "Unknown"} publishedAt={element.publishedAt} description={element.description ? element.description.slice(0, 100) : ""} newsUrl={element.url} imgUrl={element.urlToImage ? element.urlToImage : "https://exchange4media.gumlet.io/news-photo/1522981614_f9REAd_online_content.jpg?format=webp&w=750&dpr=1.0"} />
               </div>
             })
             }
@@ -78,5 +78,3 @@ News.propTypes = {
   country: PropTypes.string,
   category: PropTypes.string
 }
-
-export default News

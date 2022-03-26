@@ -62,10 +62,3 @@ p.date{
   margin-bottom: 100px;
   overflow-y: hidden !important;   /*used important bcz was getting overridden by default overflow property*/
 }
-
-/* .navbar-main-body{
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
