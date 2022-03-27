@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Daily-Digest-NewsApp/precache-manifest.1d281c73776a9f4ae1be20ed734151ce.js"
+  "/Daily-Digest-NewsApp/precache-manifest.b72c872c995b26563686f13f9dcfb26e.js"
 );
 
 workbox.clientsClaim();

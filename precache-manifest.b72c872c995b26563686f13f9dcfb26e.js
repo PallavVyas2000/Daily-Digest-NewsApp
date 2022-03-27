@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1be6b70e9e7be573cd3a",
+    "revision": "054dcbbc6f7d22c8ecb2",
     "url": "/Daily-Digest-NewsApp/static/css/main.65c57fdf.chunk.css"
   },
   {
-    "revision": "1be6b70e9e7be573cd3a",
-    "url": "/Daily-Digest-NewsApp/static/js/main.1be6b70e.chunk.js"
+    "revision": "054dcbbc6f7d22c8ecb2",
+    "url": "/Daily-Digest-NewsApp/static/js/main.054dcbbc.chunk.js"
   },
   {
     "revision": "7f8c91ddc4b58ecb5b87",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/Daily-Digest-NewsApp/static/media/logo192.67224f4b.png"
   },
   {
-    "revision": "9970e2450387cf0e6dce0bfabc5e694e",
+    "revision": "0d1da16deceea9be57076226c6f3d323",
     "url": "/Daily-Digest-NewsApp/index.html"
   }
 ];

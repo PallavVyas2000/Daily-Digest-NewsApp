@@ -1,7 +1,7 @@
 {
   "main.css": "/Daily-Digest-NewsApp/static/css/main.65c57fdf.chunk.css",
-  "main.js": "/Daily-Digest-NewsApp/static/js/main.1be6b70e.chunk.js",
-  "main.js.map": "/Daily-Digest-NewsApp/static/js/main.1be6b70e.chunk.js.map",
+  "main.js": "/Daily-Digest-NewsApp/static/js/main.054dcbbc.chunk.js",
+  "main.js.map": "/Daily-Digest-NewsApp/static/js/main.054dcbbc.chunk.js.map",
   "static/js/1.7f8c91dd.chunk.js": "/Daily-Digest-NewsApp/static/js/1.7f8c91dd.chunk.js",
   "static/js/1.7f8c91dd.chunk.js.map": "/Daily-Digest-NewsApp/static/js/1.7f8c91dd.chunk.js.map",
   "static/js/2.ced2f59d.chunk.js": "/Daily-Digest-NewsApp/static/js/2.ced2f59d.chunk.js",
@@ -11,6 +11,6 @@
   "static/media/logo192.png": "/Daily-Digest-NewsApp/static/media/logo192.67224f4b.png",
   "static/css/main.65c57fdf.chunk.css.map": "/Daily-Digest-NewsApp/static/css/main.65c57fdf.chunk.css.map",
   "index.html": "/Daily-Digest-NewsApp/index.html",
-  "precache-manifest.1d281c73776a9f4ae1be20ed734151ce.js": "/Daily-Digest-NewsApp/precache-manifest.1d281c73776a9f4ae1be20ed734151ce.js",
+  "precache-manifest.b72c872c995b26563686f13f9dcfb26e.js": "/Daily-Digest-NewsApp/precache-manifest.b72c872c995b26563686f13f9dcfb26e.js",
   "service-worker.js": "/Daily-Digest-NewsApp/service-worker.js"
 }
