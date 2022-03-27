@@ -45,7 +45,7 @@ export default function News(props){
   }
   return (
     <>
-      <h1 className={`h1 text-center text-${props.mode === 'dark'? 'white':'dark'} `} style={{marginTop: "120px", marginBottom: "50px"}}>Daily Digest - Top Headlines</h1>
+      <h1 className={`h1 text-center text-${props.mode === 'dark'? 'white':'dark'} `} style={{marginTop: "120px", marginBottom: "50px"}}>Daily Digest - Top Headlines {capitalizeFirstLetter(props.category)}</h1>
       <InfiniteScroll
         dataLength={articles.length}
         next={fetchMoreData}
