@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "E:/Ethical Hacking - Programming/Web Development/React Course/newsapp/src/components/logo192.png";
+import logo from "E:/Ethical Hacking - Programming/Web Development/React Course/newsapp/src/components/logo192px.png";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types'
 
