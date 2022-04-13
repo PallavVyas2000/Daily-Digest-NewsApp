@@ -42,10 +42,11 @@ export default function News(props){
     let parsedData = await data.json();
     setarticles(articles.concat(parsedData.articles))
     settotalResults(parsedData.totalResults)
+    console.log(parsedData);
   }
   return (
     <>
-      <h1 className={`h1 text-center text-${props.mode === 'dark'? 'white':'dark'} `} style={{marginTop: "120px", marginBottom: "50px"}}>Daily Digest - Top Headlines {capitalizeFirstLetter(props.category)}</h1>
+      <h1 className={`h1 text-center text-${props.mode === 'dark'? 'white':'dark'} `} style={{marginTop: "120px", marginBottom: "50px", fontFamily: "Geometr212 BkCn BT"}}><b>Daily Digest - Top Headlines {capitalizeFirstLetter(props.category)}</b></h1>
       <InfiniteScroll
         dataLength={articles.length}
         next={fetchMoreData}
