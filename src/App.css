@@ -66,3 +66,23 @@ p.date{
 strong {
   font-family: Azonix;
 }
+
+.marq img {
+  height: 300px;
+}
+
+p {
+  color: silver;
+  font-size: 140%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  mix-blend-mode: luminosity ;
+  white-space: pre;
+}
+
+.carousel {
+  margin-top: 100px;
+}
+
+mark{
+  background-color:#c0ffc8;
+ }
