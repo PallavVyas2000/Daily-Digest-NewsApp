@@ -29,10 +29,12 @@ export default function News(props){
     setarticles(parsedData.articles)
     settotalResults(parsedData.totalResults)
     props.setprogress(100);
+    console.log(parsedData)
   }
 
   useEffect(() => {
       updateNews();
+      // eslint-disable-next-line
   }, [])
 
   const fetchMoreData = async () => {
@@ -42,7 +44,6 @@ export default function News(props){
     let parsedData = await data.json();
     setarticles(articles.concat(parsedData.articles))
     settotalResults(parsedData.totalResults)
-    console.log(parsedData);
   }
   return (
     <>

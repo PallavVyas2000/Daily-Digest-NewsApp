@@ -1,7 +1,6 @@
 import React from "react";
 import logo from './logo192px.png';
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
   {/*replace "export class Navbar extends Component" with "const Navbar = () => " to convert it from a class based to a function bsed component */ }
