@@ -10,8 +10,8 @@ import entertainment from './Data/entertainment.json';
 import sports from './Data/sports.json';
 import technology from './Data/technology.json';
 
-export default function News(props){
-  const {currCategory} = props;
+export default function News(props) {
+  const categ = { general, health, business, science, entertainment, sports, technology };
   const [articles, setarticles] = useState([])
   const [page, setpage] = useState(1)
   const [totalResults, settotalResults] = useState(0)
@@ -37,7 +37,7 @@ export default function News(props){
   //   // let parsedData = await data.json();
   //   settotalResults(articles1)
   //   props.setprogress(100);
-    
+
   // }
 
   // useEffect(() => {
@@ -55,19 +55,19 @@ export default function News(props){
   // }
   return (
     <>
-      <h1 className={`h1 text-center text-${props.mode === 'dark'? 'white':'dark'} `} style={{marginTop: "120px", marginBottom: "50px", fontFamily: "Geometr212 BkCn BT"}}><b>Daily Digest - Top Headlines {capitalizeFirstLetter(props.category)}</b></h1>
+      <h1 className={`h1 text-center text-${props.mode === 'dark' ? 'white' : 'dark'} `} style={{ marginTop: "120px", marginBottom: "50px", fontFamily: "Geometr212 BkCn BT" }}><b>Daily Digest - Top Headlines {capitalizeFirstLetter(props.category)}</b></h1>
       <InfiniteScroll
-        dataLength={articles.length}
+        dataLength={categ[props.category].articles.length}
         // next={fetchMoreData}
-        hasMore={articles.length !== totalResults}
-        // loader={<div className="d-flex justify-content-center my-auto"> <div className="spinner-border text-center" style={{ width: "3rem", height: "3rem" }} role="status">
-        // </div></div>}
-        >
+        hasMore={categ[props.category].articles.length !== totalResults}
+      // loader={<div className="d-flex justify-content-center my-auto"> <div className="spinner-border text-center" style={{ width: "3rem", height: "3rem" }} role="status">
+      // </div></div>}
+      >
         <div className="container">
           <div className="row">
-            {props.category.articles.map((element) => {
+            {categ[props.category].articles.map((element) => {
               return <div className="col-md-4 my-3" key={element.title}>
-                <NewsItem mode = {props.mode} toggleMode = {props.toggleMode} title={element.title ? element.title.slice(0, 70) : ""} source={element.source.name} author={element.author ? element.author : "Unknown"} publishedAt={element.publishedAt} description={element.description ? element.description.slice(0, 100) : ""} newsUrl={element.url} imgUrl={element.urlToImage ? element.urlToImage : "https://exchange4media.gumlet.io/news-photo/1522981614_f9REAd_online_content.jpg?format=webp&w=750&dpr=1.0"} />
+                <NewsItem mode={props.mode} toggleMode={props.toggleMode} title={element.title ? element.title.slice(0, 70) : ""} source={element.source.name} author={element.author ? element.author : "Unknown"} publishedAt={element.publishedAt} description={element.description ? element.description.slice(0, 100) : ""} newsUrl={element.url} imgUrl={element.urlToImage ? element.urlToImage : "https://exchange4media.gumlet.io/news-photo/1522981614_f9REAd_online_content.jpg?format=webp&w=750&dpr=1.0"} />
               </div>
             })
             }
